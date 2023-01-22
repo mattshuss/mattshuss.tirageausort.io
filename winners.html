@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gagnants</title>
+  <link rel="stylesheet" href="winners.css">
+  <link rel="stylesheet" href="winners.js">
+</head>
+<body>
+  <h1>Les gagnants sont :</h1>
+  <div id="winner-list"></div>
+  <script>
+    // Récupérer les gagnants de la session web
+    const winners = JSON.parse(sessionStorage.getItem("winners"));
+    // Afficher les gagnants dans la page
+    const winnerList = document.getElementById("winner-list");
+    winners.forEach(winner => {
+      const winnerElem = document.createElement("p");
+      winnerElem.innerHTML = winner;
+      winnerList.appendChild(winnerElem);
+    });
+  </script>
+</script>
+</body>
+</html>

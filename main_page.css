@@ -1,0 +1,128 @@
+body {
+    background-color: #f7ede2;
+    height: auto; /* nouvelle propriété pour prendre toute la hauteur de la page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; /* Safari */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer */
+   user-select: none; /* Standard */
+   font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
+    margin-top: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+#input-item {
+    width: 70%;
+    margin: 30px auto;
+    padding: 12px 90px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid #8d99ae;
+    font-size: 1.5em;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+}
+
+#add-item-btn {
+    margin-left: 10px;
+}  
+
+#add-item-btn, #draw-btn{
+    width: 20%;
+    margin: 30px auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+    background-color: #8d99ae;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#item-list {
+    width: 50%;
+    list-style: none;
+    margin: 30px auto;
+    padding: 50;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#item-list li {
+    list-style: none;
+    font-size: 1.5em;
+    padding: 12px;
+}
+
+.remove-btn {
+    float: right;
+    margin-right: 10px;
+    background-color: #d90429;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+#input-winners {
+    margin-top: 30px;
+    width: 7%;
+    margin: 30px auto;
+    font-size: 1.5em;
+    border-radius: 25px; /* arrondir les bords */
+    background-color: #f7ede2; /* couleur de fond */
+}
+
+#add-item-btn:hover {
+    background-color: #2b2d42;
+    cursor: pointer;
+}
+
+#add-item-btn:active {
+    background-color: #2b2d42;
+}
+
+#add-item-btn:hover i {
+    content: url(new-mouse-icon.png);
+}
+
+#add-item-btn i {
+    content: url(default-mouse-icon.png);
+}
+#draw-btn:hover {
+    background-color: #2b2d42;
+    cursor: pointer;
+}
+
+#draw-btn:active {
+    background-color: #2b2d42;
+}
+#input-winners:hover {
+    background-color: #8d99ae;
+    cursor: pointer;
+}
+
+#input-winners:active {
+    background-color: #8d99ae;
+}

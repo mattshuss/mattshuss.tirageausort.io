@@ -1,0 +1,27 @@
+body {
+    background-color: #F8D1D7; /* couleur de fond identique à la page principale /
+    text-align: center; / aligner le texte au centre */
+    }
+    
+    h1 {
+    text-align: center; /* aligner le titre au centre */
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    margin-top: 0px;
+    }
+    
+    #winner-list {
+    text-align: center; /* aligner le contenu de la liste au centre /
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    list-style-type: square; / utiliser des puces pour les gagnants */
+    }
+    
+    #winner-list p {
+    margin-bottom: 10px; /* ajouter de l'espacement entre chaque gagnant */
+    }
+    
+    #winner-list p:last-child {
+    margin-bottom: 0; /* supprimer l'espacement en dessous du dernier gagnant */
+    }
+    
